@@ -8,15 +8,19 @@
 </head>
 
 <body>
-    button 실습 : <input type="button" value="hi" onclick="alert('hi')"><br>
-    onchange 실습 : <input type="text" onchange="alert('changed')"><br>
-    onkeydown 실습 : <input type="text" onkeydown="alert('key down')"><br>
+    <label for="alert"> 실습 : </label>
+    <input id="alert" type="button" value="hi" onclick="alert('hi')"><br>
+
+    <label for="onchange">onchange 실습 : </label>
+    <input id="onchange" type="text" onchange="alert('changed')"><br>
+
+    <label for="onkeydown">onkeydown 실습 : </label>
+    <input type="text" onkeydown="alert('key down')"><br>
 
     <!-- type : 한 문장을 입력 받는 공간
     placeholder : 빈칸에 힌트 제공
     size : input box의 너비
-    id : input을 구분하기 위한 용도 -->
-
+    id : input을 구분하기 위한 용도 -->Í
     <input type="text" id="test1" placeholder="Click here, than press down a key." size="40" />
 
     <!-- 실행창 -->
