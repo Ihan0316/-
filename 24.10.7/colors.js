@@ -5,11 +5,11 @@ function nightDayHandler(self) {
         target.style.color = 'white';
         self.value = 'day'
 
-        var alist = document.querySelectorAll('a');
+        var a_list = document.querySelectorAll('a');
         var i = 0;
-        while (i < alist.length) {
-            alist[i].style.color = 'powderblue';
-            console.log(alist[i]);
+        while (i < a_list.length) {
+            a_list[i].style.color = 'powderblue';
+            console.log(a_list[i]);
             i = i + 1;
         }
     } else {
@@ -17,11 +17,11 @@ function nightDayHandler(self) {
         target.style.color = 'black';
         self.value = 'night'
 
-        var alist = document.querySelectorAll('a');
+        var a_list = document.querySelectorAll('a');
         var i = 0;
-        while (i < alist.length) {
-            alist[i].style.color = 'blue';
-            console.log(alist[i]);
+        while (i < a_list.length) {
+            a_list[i].style.color = 'blue';
+            console.log(a_list[i]);
             i = i + 1;
         }
     }
