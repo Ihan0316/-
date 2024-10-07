@@ -9,6 +9,23 @@
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
+
+  <!-- 인풋 타입 버튼 생성 후 값 할당, 클릭시 2줄 실행  
+  .은 구분자
+  querySelector 는 메서드로 특정 기능 동작
+  style은 속성
+  backgroundColor는 속성, 배경을 변경하는 기능
+  color는 글자색 변경-->
+  <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        ">
+
+  <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">
+
   <div id="grid">
     <!-- 첫번째 박스 -->
     <ol>
