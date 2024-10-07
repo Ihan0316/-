@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>WEB1 - WEB </title>
+   <meta charset="utf-8">
+   <style>
+      a {
+         color: black;
+         text-decoration: none;
+      }
+
+      h1 {
+         font-size: 45px;
+         text-align: center;
+      }
+
+      .active {
+         color: red;
+      }
+
+      /* id로 세팅시 우선순위가 class 보다 id가 위 id는 해당 html문서에 중복되지 않아야 한다.(한 페이지당 한번 설정) 중요!!*/
+      #active {
+         color: blueviolet;
+      }
+
+      /* 하나의 태그에 효과가 다른 두 클래스를 중첩하면 우선순위에 따라 효과 적용(아래부분이 우선) */
+      /* 클래스 세팅 변경시 . 붙이기 */
+      .saw {
+         color: gray;
+      }
+
+      /* 우선순위 1. id, 2. 클래스, 3. 선택자 */
+   </style>
+</head>
+
+<body>
+   <h1>조이한 홈페이지</h1>
+   <ol>
+      <h1><a href="index.html">WEB</a></h1> <!-- 인라인으로 CSS 작성시 우선순위 1위 -->
+      <ol>
+         <!-- 클래스 명 설정 -->
+         <li><a href="1.html" class="saw">HTML</a></li>
+         <!-- 해당파일에 직접 CSS속성 넣는 방법 -->
+         <!-- 클래스를 2개 이상 넣으면 맨 아래쪽의 것으로 적용됨 -->
+         <li><a href="2.html" style="text-decoration: underline;" class="saw" id="active">CSS</a></li>
+         <li><a href="3.html">JavaScript</a></li>
+      </ol>
+      <!-- 클래스는 모든 속성에 적용 가능 -->
+      <h2 class="saw active">WEB이란 무엇인가?</h2>
+      <p style="margin-top: 40px;">
+         The World Wide Web (WWW), commonly known as the Web, is the world's dominant software platform.[1] It was
+         originally a hypertext document management system[2] accessed over the Internet.[3]
+         The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users
+         by
+         a software application called a web browser, and are published by a software application called a web server.
+         Web resources may be any type of downloaded media, but web pages are hypertext documents formatted in
+         Hypertext Markup Language (HTML). Special HTML syntax displays embedded hyperlinks with URLs, which permits
+         users
+         to navigate to other web resources. In addition to text, web pages may contain references to images, video,
+         audio, and
+         software components, which are either displayed or internally executed in the user's web browser to render
+         pages or
+         streams of multimedia contents.
+      </p>
+</body>
+
+</html>
