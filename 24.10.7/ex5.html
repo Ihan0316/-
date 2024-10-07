@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>2, 3번째 코드 3번 반복</h2>
+    <script>
+        document.write('<li>1</li>');
+        var i = 0;
+        while (i < 3) {
+            document.write('<li>2</li>');
+            document.write('<li>3</li>');
+            i = i + 1;
+        }
+        document.write('<li>4</li>');
+    </script>
+
+    <h2>Coworkers3</h2>
+    <ul>
+        <script>
+            //실제 실무 작업에서는
+            //coworkers 배열은 서버에서 특정 데이터 들을 받아와서 구성, 해당 데이터들을 배치 하면서, 반복문 이용 화면 구성
+            var coworkers = ["egoing", "leezche", "duru", "taeho"];
+            var i = 0;
+            while (i < 4) {
+                document.write('<li>' + coworkers[i] + '</li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+</body>
+
+</html>
