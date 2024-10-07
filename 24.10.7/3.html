@@ -8,6 +8,32 @@
 </head>
 
 <body>
+  <!-- <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night') {
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color= 'white';
+        document.querySelector('#night_day').value = 'day';   
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color= 'black';
+        document.querySelector('#night_day').value = 'night';   
+      }"> -->
+
+  <!-- this는 해당 input태그를 가리킴 -->
+  <!-- var target = document.querySelector('body');로 target에 querySelector 할당 -->
+  <input type="button" value="night" onclick="
+    if(this.value === 'night') {
+      var target = document.querySelector('body');
+      target.style.backgroundColor = 'black';
+      target.style.color= 'white';
+      this.value = 'day';   
+    } else {
+      var target = document.querySelector('body');
+      target.style.backgroundColor = 'white';
+      target.style.color= 'black';
+      this.value = 'night';   
+    }">
+
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
@@ -27,6 +53,16 @@
       </p>
     </div>
   </div>
+
+  <script>
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      alist[i].style.color = 'powderblue';
+      console.log(alist[i]);
+      i = i + 1;
+    }
+  </script>
 </body>
 
 </html>
