@@ -34,7 +34,8 @@
       document.write("<tr>");
       for (j = 1; j <= colNum; j++) {
         seatNo = i * colNum + j;    // 좌석 번호
-        if (seatNo > memNum) break;
+        if (seatNo > memNum)
+        break;
         document.write("<td> 좌석 " + seatNo + " </td>"); 
       }
       document.write("</tr>");

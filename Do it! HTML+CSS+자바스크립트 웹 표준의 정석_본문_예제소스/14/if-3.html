@@ -11,8 +11,12 @@
 
       if (userNumber !== null) 
         (userNumber % 3 === 0) ? alert("3의 배수입니다.") : alert("3의 배수가 아닙니다.");
+      // 3항연산자
       else 
         alert("입력이 취소됐습니다.");      
+
+        (userNumber !== null) ? (userNumber % 3 === 0) ? alert("3의 배수입니다.") : alert("3의 배수가 아닙니다.") :  alert("입력이 취소됐습니다.");
+        // 이중 3항연산자 ??
     </script>
 </body>
 </html>
