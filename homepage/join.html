@@ -52,11 +52,14 @@
 
             <div class="inner">
                 <div class="profile-picture">
-                    <img id="profileImage" src="imgdefault-profile.png" alt="프로필 이미지">
+                    <img id="profileImage" src="images/default-profile.png" alt="프로필 이미지">
                 </div>
-                <input type="file" id="imageUpload" accept="image/*" onchange="loadFile(event)"
-                    style="margin-bottom: 20px;">
 
+                <div class="custom-file-upload">
+                    <label for="imageUpload" class="custom-label">Upload Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" onchange="loadFile(event)" />
+                </div>
+                
                 <div class="inner">
                     <form action="/signup" method="post">
                         <div class="row gtr-uniform">
