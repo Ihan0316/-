@@ -11,29 +11,29 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 콘텐츠와 footer 사이의 공간을 균등하게 조정 */
+    justify-content: space-between;
     align-items: center;
-    background-size: cover; /* 배경 이미지 크기 조절 */
-    background-position: center; /* 배경 이미지 위치 조정 */
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-width: 100%;
+    width: 100%;
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.2); /* 투명도 증가 */
-    padding: 15px; /* 패딩 증가 */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: center; /* 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
 
 .navbar a {
-    margin: 0 45px; /* 링크 간격 증가 */
+    margin: 0 45px;
     color: white;
     text-decoration: none;
     font-size: 30px;
@@ -44,24 +44,24 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px; /* 패딩 추가 */
-    max-width: 1000px; /* 최대 너비 설정 */
-    width: 80%; /* 반응형 디자인을 위해 너비 설정 */
-    margin: auto; /* 자동 마진으로 중앙 정렬 */
+    padding: 20px;
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
-    font-size: 80px; /* 제목 크기 조정 */
+    font-size: 80px;
     margin: 20px 0;
     text-shadow: 5px 5px 20px black;
-    text-align: center; /* 중앙 정렬 */
+    text-align: center;
 }
 
 p {
-    font-size: 30px; /* 문단 크기 조정 */
+    font-size: 30px;
     margin: 10px 0;
     text-shadow: 5px 5px 20px black;
-    text-align: center; /* 중앙 정렬 */
+    text-align: center;
 }
 
 .button {
@@ -75,11 +75,11 @@ p {
     cursor: pointer;
     margin: 10px 0;
     display: inline-block;
-    font-size: 30px; /* 버튼 텍스트 크기 조정 */
+    font-size: 30px;
 }
 
 .button:hover {
-    background-color: #2980b9; /* 호버 시 배경색 변경 */
+    background-color: #2980b9;
 }
 
 form {
@@ -93,12 +93,12 @@ label {
 }
 
 input {
-    width: calc(100% - 20px); /* 전체 너비에서 패딩을 뺀 값 */
+    width: calc(100% - 20px);
     padding: 15px;
     border: none;
     border-radius: 5px;
     margin-bottom: 15px;
-    background: rgba(255, 255, 255, 0.8); /* 입력 필드 배경 */
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 5px 5px 10px #0000009b;
 }
 
@@ -117,6 +117,7 @@ input {
     padding: 20px;
     width: 200px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .card img {
@@ -139,11 +140,11 @@ a {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, 0.2); /* 투명도 */
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
     width: 100%;
-    padding: 10px 0; /* 패딩 추가 */
+    padding: 10px 0;
 }
 
 footer p {
