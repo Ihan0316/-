@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up - Ihan's WEB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Ihan's WEB</a></h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="generic.html">Haru</a></li>
+                    <li><a href="elements.html">Koong</a></li>
+                    <li><a href="8_test.html">mini test1</a></li>
+					<li><a href="9_test.html">mini test2</a></li>
+					<li><a href="10_test.html">mini test3</a></li>
+					<li><a href="11_test.html">Mini test4</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="join.html">Sign Up</a></li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </nav>
+
+        <!-- Sign up -->
+        <section id="signup" class="wrapper">
+            <header>
+                <div class="inner">
+                    <h2>Sign up</h2>
+                </div>
+            </header>
+
+            <div class="inner">
+                <div class="profile-picture">
+                    <img id="profileImage" src="images/default-profile.png" alt="프로필 이미지">
+                </div>
+
+                <div class="custom-file-upload">
+                    <label for="imageUpload" class="custom-label">Upload Image</label>
+                    <input type="file" id="imageUpload" accept="image/*" onchange="loadFile(event)" />
+                </div>
+                
+                <div class="inner">
+                    <form action="/signup" method="post">
+                        <div class="row gtr-uniform">
+                            <div class="col-12">
+                                <label for="fullname">ID</label>
+                                <input type="text" name="fullname" id="fullname" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="confirm_password">Confirm Password</label>
+                                <input type="password" name="confirm_password" id="confirm_password" required />
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Sign up" class="primary" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="link-container">
+                    <p>Already have an account? <a href="login.html">Sign in.</a></p>
+                </div>
+                <div class="link-container">
+                    <p>Go to <a href="index.html">main screen.</a></p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // 프로필 이미지 미리보기 기능
+            function loadFile(event) {
+                var image = document.getElementById('profileImage');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </div>
+</body>
+
+</html>

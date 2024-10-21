@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Main</a>
+            <a href="#">Haru</a>
+            <a href="#">koong</a>
+            <a href="detail.html">Detail</a>
+            <a href="#">Test1</a>
+            <a class="button" href="sign_in.html" id="signin">Sign in</a>
+            <a class="button" href="sign_up.html" id="signup">Sign up</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Sign up</h1>
+
+        <form>
+            <label for="id">Enter your ID</label>
+            <input type="text" id="id" placeholder="ID" required>
+
+            <label for="password">Enter your Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+
+            <button type="submit" class="button">Sign up</button>
+        </form>
+
+        <p>Already have an account? <a href="sign_in.html">Sign in</a>.</p>
+        <p><a href="index.html">Go to Main screen.</a></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

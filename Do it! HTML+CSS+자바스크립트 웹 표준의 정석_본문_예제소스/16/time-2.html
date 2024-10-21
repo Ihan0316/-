@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>What time is it?</title>
+	<style>
+		body {
+			font-size:2em;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		// now - 인스턴스
+		var now = new Date();
+		// 인스턴스의 메서드, 프로퍼티 접근하려면 닷 연산자(.) 이용
+		document.write("현재 시각은 " + now.toLocaleString()) ;	// 로컬 형식으로 표시하기
+	</script>
+</body>
+</html>
+

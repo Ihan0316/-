@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WEB1 - CSS</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+
+  <!-- 인풋 타입 버튼 생성 후 값 할당, 클릭시 2줄 실행  
+  .은 구분자
+  querySelector 는 메서드로 특정 기능 동작
+  style은 속성
+  backgroundColor는 속성, 배경을 변경하는 기능
+  color는 글자색 변경-->
+  <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        ">
+
+  <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">
+
+  <div id="grid">
+    <!-- 첫번째 박스 -->
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <!-- <두번째 박스 -->
+    <div id="article">
+      <h2>CSS란 무엇인가?</h2>
+      <p style="margin-top: 40px">
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        describing the presentation of a document written in a markup language
+        such as HTML.[1] CSS is a cornerstone technology of the World Wide
+        Web, alongside HTML and JavaScript.[2] CSS is designed to enable the
+        separation of presentation and content, including layout, colors, and
+        fonts.[3] This separation can improve content accessibility; provide
+        more flexibility and control in the specification of presentation
+        characteristics; enable multiple web pages to share formatting by
+        specifying the relevant CSS in a separate .css file, which reduces
+        complexity and repetition in the structural content
+      </p>
+    </div>
+  </div>
+  <!-- 첫번째 + 두번재 박스 -->
+</body>
+
+</html>

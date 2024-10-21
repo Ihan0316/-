@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="alert"> 실습 : </label>
+    <input id="alert" type="button" value="hi" onclick="alert('hi')"><br>
+
+    <label for="onchange">onchange 실습 : </label>
+    <input id="onchange" type="text" onchange="alert('changed')"><br>
+
+    <label for="onkeydown">onkeydown 실습 : </label>
+    <input type="text" onkeydown="alert('key down')"><br>
+
+    <!-- type : 한 문장을 입력 받는 공간
+    placeholder : 빈칸에 힌트 제공
+    size : input box의 너비
+    id : input을 구분하기 위한 용도 -->Í
+    <input type="text" id="test1" placeholder="Click here, than press down a key." size="40" />
+
+    <!-- 실행창 -->
+    <p id="log"></p>
+    <script>
+        // id가 test1인 input 선택
+        const input = document.querySelector("#test1");
+        // getElementById : 아이디가 log인 태그 요소 선택
+        const log = document.getElementById("log");
+        // 액션이 동작 하게끔 수행하는 기능. 
+        // "keydown" : 예약어라고함, 키를 누르면, 2번째 매개변수, logKey 콜백 함수가 동작함. 
+        input.addEventListener("keydown", logKey);
+        // 메서드(함수), 특정기능
+        // e : event
+        // e.code : 각 키의 코드 값을 해당 문자열에 추가
+        function logKey(e) {
+            log.textContent += ` ${e.code}`;
+        }
+
+    </script>
+</body>
+
+</html>

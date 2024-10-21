@@ -1,0 +1,23 @@
+깃 연동 메모 
+준비물 
+1. git 다운로드 
+2. 설치 기본값으로 설치. 
+3. win + r -> cmd -> git --version
+4. github 사이트에서 가입. 
+5. 본인꺼 내용 -> 깃허브 저장소 -> 저장. 동기화. 
+
+레포지토리 -> 뉴 -> testweb_240930-> 설명 적고 -> public 
+-> add a readme file  체크 해제, 만들기. 
+
+
+git add . : 현재 작업 폴더의 내용들을 추가하기.  
+예제소스 코드)
+echo "# test_Web_241002" >> README.md
+git init
+git add .
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/lsy3709/test_Web_241002.git
+git push -u origin main
+
